@@ -1,0 +1,70 @@
+body {
+    background: url('imgs/stars.gif') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden; /* Empêche le défilement */
+
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: Arial, sans-serif; /* Police simple pour le bouton */
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s, border-color 0.3s;
+    z-index: 2; /* Assure que le bouton est au-dessus des autres éléments */
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.widget-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%; /* Ajuste l'espace au-dessus des widgets */
+    width: 100%;
+    max-width: 600px;
+}
+
+.widget {
+    width: 100%;
+    height: 300px; /* Fixe la hauteur pour éviter la distorsion */
+    margin: 20px 0; /* Ajoute un écart entre les widgets */
+    border: none; /* Supprime les bordures par défaut */
+}
+.invisible-link {
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    background: none;
+}
+
+.invisible-link span {
+    color: #f0f0f0;
+    
+}
+
+.invisible-link:hover span {
+    cursor: pointer;
+}
+
+#noob{
+    opacity: 0.5;
+}
