@@ -56,12 +56,11 @@ body {
     transform: scale(1.2);
 }
 
-
 #letter {
     position: relative;
     z-index: 1;
-    max-width: 35%;
-    font-size: 25PX;
+    max-width: 80%; /* Augmenté pour les petits écrans */
+    font-size: 18px; /* Réduit pour les petits écrans */
     color: #f0f0f0;
     text-shadow: 0 0 25px #5e7d62;
     line-height: 1.6;
@@ -77,14 +76,29 @@ body {
 
 .invisible-link span {
     color: #f0f0f0;
-    
 }
 
 .invisible-link:hover span {
     cursor: pointer;
 }
 
-#noob{
-
+#noob {
     opacity: 0.5;
+}
+
+/* Media Queries pour les écrans de moins de 600px */
+@media (max-width: 600px) {
+    .menu-bar {
+        gap: 10px; /* Réduit l'espace entre les icônes */
+        padding: 5px 0; /* Réduit le padding */
+    }
+
+    .menu-bar a {
+        font-size: 20px; /* Réduit la taille des icônes */
+    }
+
+    #letter {
+        max-width: 90%; /* Augmente encore la largeur pour les très petits écrans */
+        font-size: 16px; /* Réduit encore la taille de la police */
+    }
 }
