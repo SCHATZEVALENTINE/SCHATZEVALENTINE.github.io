@@ -1,0 +1,90 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Playfair Display", serif;
+}
+
+body {
+    background: url('imgs/stars.gif') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 1;
+}
+
+.menu-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    transition: transform 0.3s;
+}
+
+.menu-bar a:hover {
+    transform: scale(1.2);
+}
+
+
+#letter {
+    position: relative;
+    z-index: 1;
+    max-width: 35%;
+    font-size: 25PX;
+    color: #f0f0f0;
+    text-shadow: 0 0 25px #5e7d62;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+.invisible-link {
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    background: none;
+}
+
+.invisible-link span {
+    color: #f0f0f0;
+    
+}
+
+.invisible-link:hover span {
+    cursor: pointer;
+}
+
+#noob{
+
+    opacity: 0.5;
+}

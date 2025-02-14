@@ -1,0 +1,103 @@
+body {
+    background: url('imgs/stars.gif') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden; /* Empêche le défilement */
+    font-family: 'Great Vibes', cursive; /* Utilise une police classique */
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: Arial, sans-serif; /* Police simple pour le bouton */
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s, border-color 0.3s;
+    z-index: 2; /* Assure que le bouton est au-dessus des autres éléments */
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Supprime l'espace sous l'image */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-control {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.invisible-link {
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    background: none;
+}
+
+.invisible-link span {
+    color: #f0f0f0;
+    
+}
+
+.invisible-link:hover span {
+    cursor: pointer;
+}
+
+#noob{
+    
+    opacity: 0.5;
+}

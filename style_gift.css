@@ -1,0 +1,86 @@
+body {
+    background: url('imgs/stars.gif') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Playfair Display', serif;
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s, border-color 0.3s;
+    z-index: 2;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+#backgroundcactus {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Désactive les interactions */
+}
+
+#finalCactus {
+    width: 50%;
+    max-width: 500px;
+    opacity: 0.5; 
+    filter: drop-shadow(0 0 15px rgba(50, 122, 70, 0.7)) drop-shadow(0 0 30px rgba(0, 255, 255, 0.5));
+}
+
+#message {
+    position: relative;
+    z-index: 1;
+    font-size: 28px;
+    color: #f0f0f0;
+    text-shadow: 0 0 5px #333;
+    margin-top: 20px;
+    /* Suppression du cadre */
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.invisible-link {
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    background: none;
+}
+
+.invisible-link span {
+    color: #f0f0f0;
+    
+}
+
+.invisible-link:hover span {
+    cursor: pointer;
+}
+#noob{
+
+    opacity: 0.5;
+}
